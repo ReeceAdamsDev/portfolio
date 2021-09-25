@@ -1,10 +1,19 @@
+/* KEYFRAMES STRTCH */
+@keyframes strtch {
+    50% {
+        font-size: 25px;
+    }
+    100% {
+        font-size: 20px
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
-
 }
 body {
-    background-color:   #410a1f;
+    background-color:    #4d484a;
     color: #FFE4E1;
     display: grid;
     justify-content: center;
@@ -23,4 +32,134 @@ h1 {
 h4 {
     display: flex;
     justify-content: center;
+}
+img {
+    display: flex;
+    margin-bottom: 20px;
+    padding-right: 15px;
+}
+main {
+    display: flex;
+    padding-top: 25px;
+    margin: 0;
+}
+.sub_grid {
+    display: grid;
+    text-align: center;
+    padding: 0;
+    max-width: 54ch;
+}
+.biography {
+    display: flex;
+    text-align: center;
+}
+h2 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 45px;
+}
+.nav {
+    display: grid;
+    display: space-between;
+}
+
+/* NAV */
+section {
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    min-width: 800px;
+}
+.wrppr {
+	height:20vh;
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+	min-width: 33%;
+    max-width: 800px;
+}
+
+/* PDX BUTTON */
+.pdx-wrapper {
+	height:20vh;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction:column;
+}
+.btn-pdx {
+	font-size:20px;
+	background-color:#f37024;
+	padding:20px;
+	border-radius: 20px;
+    transition:1s;
+    text-decoration: none;
+    color: white;
+}
+
+.pdx-wrapper {
+    background-color: black;
+    color: white;
+}
+.pdx-wrapper .btn-pdx:hover {
+    -webkit-animation: strtch 1s;
+    animation: strtch 1s;
+}
+
+/* DCCC BUTTON */
+.dccc-wrapper {
+	height:20vh;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction:column;
+}
+.btn-dccc {
+	font-size:20px;
+	background-color: #105a96;
+	padding:20px;
+	border-radius: 20px;
+    transition:1s;
+    text-decoration: none;
+    color: white;
+}
+
+.dccc-wrapper {
+    background-color: black;
+    color: white;
+}
+.dccc-wrapper .btn-dccc:hover {
+    -webkit-animation: strtch 1s;
+    animation: strtch 1s;
+}
+
+/* RESUME BUTTON */
+.resume-wrapper {
+	height:20vh;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction:column;
+}
+.btn-resume {
+	font-size:20px;
+	background-color:#64bc86;
+	padding:20px;
+	border-radius: 20px;
+    transition:1s;
+    text-decoration: none;
+    color: white;
+}
+
+.resume-wrapper {
+    background-color: black;
+    color: white;
+}
+.resume-wrapper .btn-resume:hover {
+    -webkit-animation: strtch 1s;
+    animation: strtch 1s;
 }
