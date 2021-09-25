@@ -80,7 +80,33 @@ section {
 	align-items: center;
 	justify-content: space-between;
 	min-width: 33%;
-    max-width: 800px;
+}
+
+/* RESUME BUTTON */
+.resume-wrapper {
+	height:20vh;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction:column;
+}
+.btn-resume {
+	font-size:20px;
+	background-color:#64bc86;
+	padding:20px;
+	border-radius: 20px;
+    transition:1s;
+    text-decoration: none;
+    color: white;
+}
+
+.resume-wrapper {
+    background-color: black;
+    color: white;
+}
+.resume-wrapper .btn-resume:hover {
+    -webkit-animation: strtch 1s;
+    animation: strtch 1s;
 }
 
 /* PDX BUTTON */
@@ -137,29 +163,61 @@ section {
     animation: strtch 1s;
 }
 
-/* RESUME BUTTON */
-.resume-wrapper {
-	height:20vh;
-	display:flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction:column;
-}
-.btn-resume {
-	font-size:20px;
-	background-color:#64bc86;
-	padding:20px;
-	border-radius: 20px;
-    transition:1s;
-    text-decoration: none;
-    color: white;
+/* REACTIVE */
+
+@media (max-width: 700px) {
+    main {
+        display: grid;
+        justify-content: center;
+        padding-top: 25px;
+        margin: 0;
+    }
+    img {
+        display: grid;
+        justify-self: center;
+        margin-bottom: 20px;
+        padding-right: 15px;
+    }
+    section {
+        display:grid;
+        flex-wrap:wrap;
+        justify-content:center;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .resume-wrapper {
+        height:15vh;
+        width: 45vh;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction:column;
+    }
+    .pdx-wrapper {
+        height:15vh;
+        width: 45vh;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction:column;
+    }
+    .dccc-wrapper {
+        height:15vh;
+        width: 45vh;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction:column;
+    }
 }
 
-.resume-wrapper {
-    background-color: black;
-    color: white;
-}
-.resume-wrapper .btn-resume:hover {
-    -webkit-animation: strtch 1s;
-    animation: strtch 1s;
+@media (max-width: 400px) {
+    .sub_grid {
+        display: grid;
+        text-align: center;
+        padding: 0;
+        max-width: 36ch;
+    }
 }
